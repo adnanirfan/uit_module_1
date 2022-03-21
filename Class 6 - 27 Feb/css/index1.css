@@ -1,0 +1,7 @@
+h1 ~ p#p2 {
+  background-color: red;
+}
+
+p#p1, p#p2, p#p3 {
+  background-color: orange;
+}

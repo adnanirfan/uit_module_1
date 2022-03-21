@@ -1,0 +1,38 @@
+/* p[class~="class-9"] {
+  color: blue;
+} */
+
+/* Start With */
+/* p[class^="d"] {
+  color: blue;
+} */
+
+/* Contains */
+/* p[class*="d"] { 
+  color: blue;
+} */
+
+/* End With */
+/* p[class$="g"] {
+  color: blue;
+} */
+
+h1 {
+  border: 5px solid red;
+  border-radius: 50px;
+}
+
+h1 + p {
+  border: 5px solid red;
+  border-radius: 50px;
+
+  padding: 10px;
+  margin-left: 10px;
+}
+
+h1 ~ p {
+  border: 5px solid blue;
+  border-radius: 50px;
+
+  padding: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <input id="text-box" type="text" id="" />
+    <button id="add-button">Add</button>
+    <ul id="list">
+      <li>Call ABC</li>
+      <li>Buy Grocery</li>
+    </ul>
+
+    <script>
+      document.getElementById("add-button").addEventListener("click", onClick);
+
+      function onClick() {
+        const newItem = document.createElement("li");
+
+        var x = document.getElementById("text-box");
+        const text = x.value.toUpperCase();
+        x.value = "";
+
+        newItem.innerHTML = text;
+        addToLocalStorage(text);
+        document.getElementById("list").appendChild(newItem);
+        console.log();
+      }
+
+      function addToLocalStorage(newText) {
+        let todos = localStorage.getItem("todos");
+        if (todos) {
+          todos = JSON.parse(todos);
+        } else todos = [];
+        todos.push(newText);
+        localStorage.setItem("todos", JSON.stringify(todos));
+      }
+
+      window.onload = () => {
+        let todos = localStorage.getItem("todos");
+        if (todos) {
+          todos = JSON.parse(todos);
+
+          for (let i = 0; i < todos.length; i++) {
+            const text = todos[i];
+            const newItem = document.createElement("li");
+            newItem.innerHTML = text;
+            document.getElementById("list").appendChild(newItem);
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

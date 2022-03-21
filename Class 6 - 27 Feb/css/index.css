@@ -1,0 +1,39 @@
+p#p1 {
+  color: blue;
+}
+p#p2 {
+  color: red;
+}
+p#p3 {
+  color: yellow;
+}
+p#p2.module-class-1 {
+  /* border: 1px solid blue; */
+  /* border-radius: 15px; */
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+p#p1 > span > .bold {
+  font-weight: bold;
+  font-style: italic;
+  font-family: monospace;
+}
+p#p2 .bold {
+  font-weight: bold;
+  color: orange;
+}
+
+p {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+h1 ~ p {
+  background-color: blue;
+}

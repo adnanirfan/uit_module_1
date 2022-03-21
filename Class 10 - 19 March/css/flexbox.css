@@ -1,0 +1,50 @@
+/* FLEX */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.border {
+  border: 2px solid blue;
+}
+
+section {
+}
+section .row-1 {
+  display: flex;
+}
+section .p-1 {
+}
+
+section .thumbnails {
+  width: 600px;
+}
+section .thumbnails img {
+  width: 100px;
+}
+
+section .row-2 {
+  display: flex;
+}
+section .row-2 img {
+  width: 200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 980px) {
+  body {
+    background-color: lightgreen;
+  }
+}

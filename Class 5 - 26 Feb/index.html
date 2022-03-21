@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS</title>
+    <style>
+      p#p1 {
+        color: blue;
+      }
+      p#p2 {
+        color: red;
+      }
+      p#p3 {
+        color: yellow;
+      }
+      p#p2.module-class-1 {
+        /* border: 1px solid blue; */
+        /* border-radius: 15px; */
+        padding: 10px;
+        /* margin: 10px; */
+      }
+
+      p#p1 .bold {
+        font-weight: bold;
+        font-style: italic;
+        font-family: monospace;
+      }
+      p#p2 .bold {
+        font-weight: bold;
+        color: orange;
+      }
+
+      p {
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1" class="module-class-1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+      repellat soluta tenetur expedita
+      <span class="bold">culpa</span> consequatur qui, voluptatibus distinctio
+      nisi, iure reprehenderit quis necessitatibus unde magnam veniam laudantium
+      corporis eum amet.
+    </p>
+
+    <p id="p2" class="module-class-1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+      repellat soluta tenetur <span class="bold">expedita</span> culpa
+      consequatur qui, voluptatibus distinctio nisi, iure reprehenderit quis
+      necessitatibus unde magnam veniam laudantium corporis eum amet.
+    </p>
+
+    <p id="p3" class="module-class-1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+      repellat soluta tenetur expedita culpa consequatur qui, voluptatibus
+      distinctio nisi, iure reprehenderit quis necessitatibus unde magnam veniam
+      laudantium corporis eum amet.
+    </p>
+  </body>
+</html>

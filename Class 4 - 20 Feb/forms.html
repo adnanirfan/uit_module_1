@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="http://www.example.com/comments.php">
+      <label
+        >Username:
+        <input
+          type="text"
+          name="username"
+          size="30"
+          maxlength="30"
+          placeholder="Enter your Username"
+      /></label>
+
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        size="30"
+        maxlength="30"
+        placeholder="Enter your Password"
+      />
+
+      <p>What did you think of this gig?</p>
+      <textarea name="comments" cols="30" rows="4" placeholder="sdfa">
+Enter your comments...
+      </textarea>
+
+      <p>Upload your song in MP3 format:</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+      <input type="submit" name="subscribe" value="Subscribe" />
+
+      <input
+        type="image"
+        src="../Class 3 - 13 Feb/images/image1.jpeg"
+        width="100"
+        height="20"
+      />
+
+      <hr />
+
+      <label>Age: <input type="text" name="age" /></label>
+
+      <br />
+      Gender:
+      <input id="female" type="radio" name="gender" value="f" />
+      <label for="female">Female</label>
+
+      <input id="male" type="radio" name="gender" value="m" />
+      <label for="male">Male</label>
+
+      <hr />
+
+      <fieldset>
+        <legend>Contact details</legend>
+        <label
+          >Email:<br />
+          <input type="text" name="email" /></label
+        ><br />
+        <label
+          >Mobile:<br />
+          <input type="text" name="mobile" /></label
+        ><br />
+        <label
+          >Telephone:<br />
+          <input type="text" name="telephone"
+        /></label>
+      </fieldset>
+
+      <label for="username">Username:</label>
+      <input type="text" name="username" maxlength="5" title="QWERTYUIO" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" />
+      <input type="submit" value="Submit" />
+
+      <hr />
+
+      <label for="username">Departure date:</label>
+      <input type="date" name="depart" />
+
+      <hr />
+
+      <p>Please enter your email address:</p>
+      <input type="email" name="email" />
+      <input type="submit" value="Submit" />
+
+      <hr />
+
+      <p>Please enter your website address:</p>
+      <input type="url" name="website" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
