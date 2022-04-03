@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-info {
+  display: flex;
+  justify-content: space-between;
+}
